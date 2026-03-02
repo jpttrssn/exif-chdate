@@ -25,7 +25,11 @@ fn usage() -> ! {
 }
 
 /// Write EXIF tags using exiftool.
-async fn write_exif_tags<I>(files: I, date_time_original: &str, film: &str) -> std::io::Result<()>
+async fn write_exif_tags<I>(
+    files: I,
+    date_time_original: &str,
+    user_comment: &str,
+) -> std::io::Result<()>
 where
     I: IntoIterator,
     I::Item: AsRef<OsStr>,
@@ -34,7 +38,7 @@ where
 
     cmd.arg("-overwrite_original")
         .arg(format!("-DateTimeOriginal={}", date_time_original))
-        .arg(format!("-UserComment={}", film));
+        .arg(format!("-UserComment={}", user_comment));
 
     for file in files {
         cmd.arg(file);
