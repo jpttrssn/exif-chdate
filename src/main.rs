@@ -7,7 +7,7 @@ use tokio::process::Command;
 /// Print usage and exit.
 fn usage() -> ! {
     eprintln!(
-        "Usage: exif_film <year>::<month>::<day> <film> <process> <camera> <lens> <file1> [file2 ...]\n\
+        "Usage: exif-film <year>::<month>::<day> <film> <process> <camera> <lens> <file1> [file2 ...]\n\
         \n\
         <year>:<month>:<day>    Example: 1999:01:01\n\
         <film>                  Type of film and ISO. Example: Ilford HP5+ @1600\n\

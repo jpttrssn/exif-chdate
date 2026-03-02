@@ -6,7 +6,7 @@ Requires `exiftool` to be installed locally.
 ## Usage
 
 ```
-exif_film <year>::<month>::<day> <film> <process> <camera> <lens> <file1> [file2 ...]
+exif-film <year>::<month>::<day> <film> <process> <camera> <lens> <file1> [file2 ...]
 
 <year>:<month>:<day>    Example: 1999:01:01
 <film>                  Type of film and ISO. Example: Ilford HP5+ @1600
