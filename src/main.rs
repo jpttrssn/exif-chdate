@@ -8,9 +8,9 @@ use tokio::task::JoinHandle;
 /// Print usage and exit.
 fn usage() -> ! {
     eprintln!(
-        "Usage: exif-film <year>::<month>::<day> <film> <process> <camera> <lens> <file1> [file2 ...]\n\
+        "Usage: exif-film <year>-<month>-<day> <film> <process> <camera> <lens> <file1> [file2 ...]\n\
         \n\
-        <year>:<month>:<day>    Example: 1999:01:01\n\
+        <year>-<month>-<day>    Example: 1999-01-01\n\
         <film>                  Type of film and ISO. Example: Ilford HP5+ @1600\n\
         <process>               Film process. Example: Rodinal 1+25 @1600\n\
         <camera>                Original camera\n\

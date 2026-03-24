@@ -6,9 +6,9 @@ Requires `exiftool` to be installed locally.
 ## Usage
 
 ```
-exif-film <year>::<month>::<day> <film> <process> <camera> <lens> <file1> [file2 ...]
+exif-film <year>-<month>-<day> <film> <process> <camera> <lens> <file1> [file2 ...]
 
-<year>:<month>:<day>    Example: 1999:01:01
+<year>-<month>-<day>    Example: 1999-01-01
 <film>                  Type of film and ISO. Example: Ilford HP5+ @1600
 <process>               Film process. Example: Rodinal 1+25 @1600
 <camera>                Original camera
